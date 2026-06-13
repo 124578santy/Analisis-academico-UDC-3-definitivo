@@ -212,7 +212,7 @@ def main():
     # Ejecución Condicional según la opción seleccionada
     if "1." in opcion:
         st.header("🗂️ Carga de Datos")
-        archivos = st.file_uploader("Sube tus archivos CSV o TXT", type=['csv'], accept_multiple_files=True)
+        archivos = st.file_uploader("Sube tus archivos CSV", type=['csv'], accept_multiple_files=True)
         if archivos:
             df_resultado = cargar_archivo_interactivo(archivos)
             if df_resultado is not None:
